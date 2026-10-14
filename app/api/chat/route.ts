@@ -39,7 +39,7 @@ Notes
 If no matching record exists, state that and suggest next steps.`;
 
   const result = streamText({
-    model: openai("gpt-6-astra"),
+    model: openai("gpt-5.4-nano-2026-03-17"),
     messages: await convertToModelMessages(messages),
     system: SYSTEM_PROMPT,
     stopWhen: stepCountIs(5),
